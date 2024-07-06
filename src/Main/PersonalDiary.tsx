@@ -10,6 +10,7 @@ import InstagramIcon from '@mui/icons-material/Instagram';
 import FacebookIcon from '@mui/icons-material/Facebook';
 import data from '../personal_diary.json'
 import Personal_Diary_1 from "../Personal_Diary/Personal_Diary_1";
+import Personal_Diary_FYP from "../Personal_Diary/Personal_Diary_FYP";
 import Tabs from '@mui/material/Tabs';
 import Tab from '@mui/material/Tab';
 import AboutMe from "./AboutMe";
@@ -75,7 +76,7 @@ class DiaryItem extends React.Component{
     }
 }
 export default function Personal_Diary () {
-    const [project, setproject] = React.useState<JSX.Element>(Personal_Diary_1);
+    const [project, setproject] = React.useState<JSX.Element>(Personal_Diary_FYP);
     const [projectnum, setprojectnum] = React.useState(0);
 
     return (
@@ -91,24 +92,29 @@ export default function Personal_Diary () {
 
                  value={project} onChange={(e,a)=>{
                     switch(a){
-                        case 0: 
+                        case 0:
                             setprojectnum(0)
-                            setproject(Personal_Diary_1);
+                            setproject(Personal_Diary_FYP);
                             break;
                         case 1: 
                             setprojectnum(1)
-                            setproject(Personal_Diary_2);
+                            setproject(Personal_Diary_1);
                             break;
                         case 2: 
                             setprojectnum(2)
+                            setproject(Personal_Diary_2);
+                            break;
+                        case 3: 
+                            setprojectnum(3)
                             setproject(Personal_Diary_3);
                             break;
 
                     }
                  }} aria-label="basic tabs example">
-                    <Tab label="Project 1" sx={{borderStyle:'solid',  borderColor:projectnum==0?'grey':"transparent" ,borderWidth:'0px 0px 2px 0px'}}/>
-                    <Tab label="Project 2" sx={{borderStyle:'solid',  borderColor:projectnum==1?'grey':"transparent" ,borderWidth:'0px 0px 2px 0px'}}/>
-                    <Tab label="Project 3" sx={{borderStyle:'solid',  borderColor:projectnum==2?'grey':"transparent" ,borderWidth:'0px 0px 2px 0px'}} />
+                    <Tab label="Final Year project" sx={{borderStyle:'solid',  borderColor:projectnum==0?'grey':"transparent" ,borderWidth:'0px 0px 2px 0px'}}/>
+                    <Tab label="Project 1" sx={{borderStyle:'solid',  borderColor:projectnum==1?'grey':"transparent" ,borderWidth:'0px 0px 2px 0px'}}/>
+                    <Tab label="Project 2" sx={{borderStyle:'solid',  borderColor:projectnum==2?'grey':"transparent" ,borderWidth:'0px 0px 2px 0px'}}/>
+                    <Tab label="Project 3" sx={{borderStyle:'solid',  borderColor:projectnum==3?'grey':"transparent" ,borderWidth:'0px 0px 2px 0px'}} />
                 </Tabs>
                 </Box>
             </CardContent>

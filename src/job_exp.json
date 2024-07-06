@@ -8,7 +8,7 @@
     "Mi-expert":{
         "name":"MiExpert Limited",
         "year":"2022-now",
-        "post":"Part-time full stack engineer",
-        "despcription":"Front-end: React with Typescript for chatroom, CMS panel\nBack-end: Serverless cloud deploy with aws service (API gateway, Lambda, DynamoDB)"
+        "post":"Full stack engineer",
+        "despcription":"Front-end (Web): React with Typescript for chatroom, CMS panel\nFront-end (Mobile): Flutter cross platfrom application on Android and IOS\nBack-end: Serverless cloud deploy with aws service (API gateway, Lambda, DynamoDB), Firebase"
     }
 }

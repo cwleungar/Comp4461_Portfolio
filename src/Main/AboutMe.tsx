@@ -83,7 +83,7 @@ export default function AboutMe () {
                     />
         <CardContent>
         <Typography variant="body2" color="text.secondary">
-        Hi everyone, I am Sam. A year 3 Computer Science undergraduate of HKUST. I am interested in Machine Learning and any other application of CS like Web/App development. I am glad to chat with all of you. Please feel free to contact me if you want to make a friend.
+        Hi, I'm Sam, a software engineer. I obtained my bachelor's degree in Computer Science from HKUST in 2024. I'm particularly interested in Machine Learning and other applications of computer science, such as web and app development. I'm glad to chat with you all and welcome any new friends. Please feel free to reach out if you'd like to connect.
         </Typography>
       </CardContent>
       <Divider variant="middle"/>
